@@ -1,11 +1,12 @@
 from objects import *
 
-block=1
-pof=0
-message="message"
-previous="0000000000000000000000000000000000000000000000000000000000000000"
+id=1
+prev= "0000000000000000000000000000000000000000000000000000000000000000"
+content= "on va tester autre chose"
+sign= "guillaume"
 
-Block1=Block(block,pof,message,previous)
+
+Block1=Block(id,prev,content,sign)
 Block1.show()
 
 

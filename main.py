@@ -2,7 +2,7 @@ from objects import *
 
 #id=1
 #prev= "0000000000000000000000000000000000000000000000000000000000000000"
-content= "la blockchain marche !"
+content= "la blockchain marche ?"
 sign= "guillaume"
 
 def read():
@@ -11,7 +11,7 @@ def read():
         sep=lastBlock.split(",")
     return sep
 
-Block1=Block(read()[0],read()[1],content,sign)
+Block1=Block(read()[0],read()[5],content,sign)
 
 
 

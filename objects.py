@@ -16,7 +16,7 @@ class Block:
             self.data=(str(self.id)+str(self.prev)+str(self.content)+str(self.sign)+str(self.pof))
             self.hash=hashlib.sha256(self.data.encode()).hexdigest()
         
-        line=str(self.id)+","+str(self.prev)+","+str(self.content)+","+str(self.sign)+","+str(self.pof)+","+str(self.hash) 
+        line=str(self.id)+","+str(self.prev)+","+str(self.content)+","+str(self.sign)+","+str(self.pof)+","+str(self.hash)+"," 
         with open('chain.txt','a') as af:
             af.write(line+"\n")
     
